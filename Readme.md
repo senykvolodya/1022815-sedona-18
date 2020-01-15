@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владимир Сеник](https://up.htmlacademy.ru/adaptive/18/user/1022815).
-* Наставник: `Неизвестно`.
+* Наставник: [Степан Нарышков](https://htmlacademy.ru/profile/id95962).
 
 ---
 
