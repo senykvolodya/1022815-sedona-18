@@ -22,14 +22,18 @@
       <img class="promo" src="#" alt="">
       <section class="feedback">
         <h1 class="feedback__title">Оставьте свой отзыв</h1>
-        <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+          достопримечательностях</p>
         <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="feedback__item">
             <legend class="feedback__item-title">Представьтесь:</legend>
-            <label class="feedback__item-label" for="name">Имя<sup>*</sup></label>
-            <input class="feedback__item-text" type="text" id="name" name="name" placeholder="Петр" required>
+            <div>
+              <label class="feedback__item-label" for="name">Имя<sup>*</sup></label>
+              <input class="feedback__item-text" type="text" id="name" name="name" placeholder="Петр" required>
+            </div>
             <label class="feedback__item-label" for="last-name">Фамилия<sup>*</sup></label>
-            <input class="feedback__item-text" type="text" id="last-name" name="last-name" placeholder="Иванов" required>
+            <input class="feedback__item-text" type="text" id="last-name" name="last-name" placeholder="Иванов"
+                   required>
             <label class="feedback__item-label" for="surname">Отчество</label>
             <input class="feedback__item-text" type="text" id="surname" name="surname" placeholder="Александрович">
           </fieldset>
@@ -38,7 +42,8 @@
             <label class="feedback__item-label" for="tel">Контактный телефон<sup>*</sup>:</label>
             <input class="feedback__item-text" type="tel" id="tel" name="tel" placeholder="Введите телефон" required>
             <label class="feedback__item-label" for="email">Электронная почта<sup>*</sup>:</label>
-            <input class="feedback__item-text" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+            <input class="feedback__item-text" type="email" id="email" name="email" placeholder="Введите e-mail"
+                   required>
           </fieldset>
           <fieldset class="feedback__item">
             <legend class="feedback__item-title">Ваше общее впечатление:</legend>
@@ -63,7 +68,8 @@
           <fieldset class="feedback__item">
             <legend class="feedback__item-title">Опишите свои эмоции:</legend>
             <label class="visually-hidden" for="comment">Оставте отзыв</label>
-            <textarea class="feedback__item-comment" id="comment" name="comment" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="feedback__item-comment" id="comment" name="comment" cols="30" rows="10"
+                      placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="feedback__form-submit" type="submit">Отправить отзыв</button>
         </form>
