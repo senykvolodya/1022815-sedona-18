@@ -1,0 +1,23 @@
+.header {
+  position: relative;
+  padding-bottom: 56px;
+  background-color: #ffffff;
+}
+
+.header__logo {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+.header__icon-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 23px;
+  height: 21px;
+  margin: 18px 20px;
+}
+
+

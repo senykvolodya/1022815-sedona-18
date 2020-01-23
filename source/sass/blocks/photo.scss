@@ -1,0 +1,55 @@
+.photo {
+  text-align: left;
+  border-top: 1px solid #e6e6e6;
+}
+
+.photo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photo__item {
+  padding: 22px 20px 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.photo__link-pic {
+  display: block;
+  margin: 0 0 22px;
+}
+
+.photo__title {
+  margin: 0 0 11px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+
+}
+
+.photo__text {
+  margin: 0 0 11px;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: initial;
+  color: #333333;
+}
+
+.photo__like-count {
+  position: relative;
+  margin: 0;
+  padding-left: 37px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 23px;
+    height: 21px;
+    background-image: url("../../img/icon-like.svg");
+    background-size: contain;
+  }
+}
