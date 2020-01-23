@@ -103,8 +103,18 @@
     width: 37px;
     height: 36px;
     background-image: url("../../img/icon-house.svg");
+    background-repeat: no-repeat;
     background-size: contain;
     content: "";
+  }
+
+  &--gifts::before {
+    background-image: url("../../img/icon-gift.svg");
+  }
+
+  &--burger::before {
+    top: 4px;
+    background-image: url("../../img/icon-burger.svg");
   }
 }
 
