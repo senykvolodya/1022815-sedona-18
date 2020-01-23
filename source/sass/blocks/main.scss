@@ -1,0 +1,23 @@
+.main {
+  color: #000000;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.main__promo {
+  display: flex;
+  justify-content: center;
+  min-height: 158px;
+  background: url("../../img/bg-intro-triangle-mobile.svg"), url("../../img/bg-back-mobile@1x.jpg");
+  background-color: #d6e6ed;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover, auto;
+
+  &--welcome {
+    min-height: 389px;
+    background-size: cover;
+  }
+}
+
+

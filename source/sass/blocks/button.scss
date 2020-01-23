@@ -1,0 +1,40 @@
+.btn-blue {
+  color: #ffffff;
+  background: #82b4d4;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #669fc1;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5397be;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
+
+.btn-current {
+  color: #766357;
+}
+
+.btn-controls {
+  display: inline-block;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: #000000;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

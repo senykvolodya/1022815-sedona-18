@@ -37,5 +37,9 @@
   ],
   "engines": {
     "node": "8.16"
+  },
+  "dependencies": {
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-order": "^4.0.0"
   }
 }
