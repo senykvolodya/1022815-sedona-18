@@ -17,9 +17,18 @@
   padding: 0;
   list-style: none;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 640px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: 770px) {
+    justify-content: center;
   }
 }
 
@@ -41,6 +50,7 @@
 .photo__link-pic {
   display: block;
   margin: 0 0 22px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     display: block;

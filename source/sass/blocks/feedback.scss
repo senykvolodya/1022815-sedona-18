@@ -169,6 +169,28 @@
     }
   }
 
+  @media (min-width: 769px) {
+    &--dividers-visited-places {
+      margin: 0 100px 55px;
+
+      &::before {
+        left: -200px;
+        width: 150px;
+      }
+
+      &::after {
+        right: -200px;
+        width: 150px;
+      }
+    }
+  }
+
+  @media (min-width: 940px) {
+    &--dividers-visited-places {
+      margin: 0 210px 55px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     &--horizontal-dividers {
       &::before {
@@ -257,11 +279,23 @@
     }
   }
 
+  @media (min-width: 900px) {
+    &--contact-info-style {
+      flex-direction: row;
+
+      .feedback__item-label {
+        display: block;
+        margin: 0 20px 0 0;
+      }
+    }
+  }
+
   @media (min-width: $desktop-width) {
     &--contact-info-style {
       flex-direction: row;
 
       .feedback__item-label {
+        display: flex;
         margin: 0 20px 0 0;
       }
 

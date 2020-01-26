@@ -44,6 +44,7 @@
 
 .video__player-img {
   display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -94,7 +95,6 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 143px;
     width: 400px;
   }
 
