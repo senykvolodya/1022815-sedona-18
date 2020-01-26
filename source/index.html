@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -10,21 +12,28 @@
     <header class="header">
       <nav class="header__nav nav">
         <ul class="nav__list">
-          <li class="nav__item "><a class="nav__item-link btn-blue btn-current">Главная</a></li>
+          <li class="nav__item "><a class="nav__item-link nav__item-link--current btn-blue ">Главная</a></li>
           <li class="nav__item"><a class="nav__item-link btn-blue" href="photo.html">Фото и видео</a></li>
           <li class="nav__item"><a class="nav__item-link btn-blue" href="form.html">Форма отзыва</a></li>
           <li class="nav__item"><a class="nav__item-link btn-blue" href="https://htmlacademy.ru/" target="_blank">Html
             academy</a></li>
         </ul>
-        <a class="header__logo"><img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны"></a>
+        <a class="header__logo">
+          <picture>
+            <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
+            <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
+            <img src="img/logo-sedona-mobile.svg" alt="Логотип Седоны">
+          </picture>
+        </a>
       </nav>
-      <button class="header__icon-menu" type="button">Бургер</button>
+      <button class="header__icon-menu" type="button"></button>
     </header>
 
     <main class="main">
       <h1 class="visually-hidden">Добро пожаловать в седону</h1>
       <div class="main__promo main__promo--welcome">
-        <img src="img/text-sedona-index.svg" width="281" height="214" alt="Добро пожаловать в Седону">
+        <img class="main__promo-img" src="img/text-sedona-index.svg" width="281" height="214"
+             alt="Добро пожаловать в Седону">
       </div>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
@@ -38,36 +47,37 @@
             <p class="advantages__item-count">— №1 —</p>
             <p class="advantages__item-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="advantages__item-image">
-            <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фотография городка">
-          </div>
+          <picture class="advantages__item-image">
+            <source srcset="img/main-city-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/main-city-tablet@1x.jpg" media="(min-width: 768px)">
+            <img src="img/main-city-mobile@1x.jpg" alt="Фотография городка">
+          </picture>
         </div>
         <ul class="advantages__list-icon">
           <li class="advantages__icon-item">
             <h3 class="advantages__icon-item-title">Жилье</h3>
-            <p class="advantages__icon-item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!
-            <p>
+            <p class="advantages__icon-item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="advantages__icon-item  advantages__icon-item--gifts">
             <h3 class="advantages__icon-item-title">Сувениры</h3>
-            <p class="advantages__icon-item-text">Не только китайского, но и местного производства!
-            <p>
+            <p class="advantages__icon-item-text">Не только китайского, но и местного производства!</p>
           </li>
           <li class="advantages__icon-item advantages__icon-item--burger">
             <h3 class="advantages__icon-item-title">Еда</h3>
-            <p class="advantages__icon-item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-            <p>
+            <p class="advantages__icon-item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
         </ul>
         <div class="advantages__item-wrapper">
-          <div class="advantages__item">
+          <div class="advantages__item advantages__item--backward">
             <h3 class="advantages__item-title">Там есть мост дьявола</h3>
             <p class="advantages__item-count">— №2 —</p>
             <p class="advantages__item-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <div class="advantages__item-image">
-            <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фотография местности">
-          </div>
+          <picture class="advantages__item-image">
+            <source srcset="img/main-bridge-desktop@1x.jpg" media="(min-width: 1200px)">
+            <source srcset="img/main-bridge-tablet@1x.jpg" media="(min-width: 768px)">
+            <img src="img/main-bridge-mobile@1x.jpg" alt="Фотография местности">
+          </picture>
         </div>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--bg-grey">
@@ -99,7 +109,11 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <img class="map__pic" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
+        <picture>
+          <source srcset="img/bg-map-desktop@1x.jpg" media="(min-width: 1200px)">
+          <source srcset="img/bg-map-tablet@1x.jpg" media="(min-width: 768px)">
+          <img class="map__pic" src="img/bg-map-mobile@1x.jpg" alt="Карта">
+        </picture>
         <div class="map__api"></div>
       </section>
     </main>

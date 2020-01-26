@@ -1,5 +1,9 @@
 .feedback__text-wrapper {
   padding: 41px 22px 12px;
+
+  @media (min-width: $tablet-width) {
+    padding: 72px 165px;
+  }
 }
 
 .feedback__title {
@@ -7,13 +11,26 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .feedback__text {
   margin: 0 0 10px;
-  color: #333333;
+  color: $black-one;
   font-size: 14px;
   line-height: 24px;
+}
+
+.feedback__form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 60px;
+  }
 }
 
 .feedback__item {
@@ -23,6 +40,48 @@
   &--last-block-padding {
     padding: 25px 20px 30px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 55px;
+    border: none;
+
+    &:nth-child(1) {
+      width: 275px;
+      text-align: left;
+    }
+
+    &:nth-child(3) {
+      order: -1;
+      width: 275px;
+      text-align: left;
+    }
+
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(5) {
+      width: 100%;
+    }
+
+    &:nth-child(4) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 100px 55px;
+    }
+
+    &--divider {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        left: -55px;
+        width: 1px;
+        height: 292px;
+        background-color: #dbdbdb;
+        content: "";
+      }
+    }
+  }
 }
 
 .feedback__item-title {
@@ -30,6 +89,58 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin: 0 0 55px;
+    font-size: 21px;
+
+    &--horizontal-dividers {
+      &::before {
+        position: absolute;
+        top: 12px;
+        left: 0;
+        width: 125px;
+        height: 1px;
+        background-color: #dbdbdb;
+        content: "";
+      }
+
+      &::after {
+        position: absolute;
+        top: 12px;
+        right: 0;
+        width: 125px;
+        height: 1px;
+        background-color: #dbdbdb;
+        content: "";
+      }
+    }
+
+    &--dividers {
+      margin: 0 20px 55px;
+
+      &::before {
+        position: absolute;
+        top: 12px;
+        left: -120px;
+        width: 125px;
+        height: 1px;
+        background-color: #dbdbdb;
+        content: "";
+      }
+
+      &::after {
+        position: absolute;
+        top: 12px;
+        right: -120px;
+        width: 125px;
+        height: 1px;
+        background-color: #dbdbdb;
+        content: "";
+      }
+    }
+  }
 }
 
 .feedback__item-content-wrapper {
@@ -61,19 +172,26 @@
       background-color: #e7e7e7;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    &--label-width {
+      width: 200px;
+      margin: 0 0 30px;
+    }
+  }
 }
 
 .feedback__item-label {
   display: flex;
   align-items: center;
   margin: auto 0;
-  color: #333333;
+  color: $black-one;
   font-size: 14px;
   line-height: 26px;
   cursor: pointer;
 
   &--radio-checkbox {
-    color: #000000;
+    color: $black;
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
@@ -89,13 +207,13 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  background-color: #f2f2f2;
-  border: 4px solid #f2f2f2;
+  background-color: $white-one;
+  border: 4px solid $white-one;
   outline: none;
   transition: 0.3s;
 
   &::placeholder {
-    color: #000000;
+    color: $black;
   }
 
   &:hover {
@@ -104,7 +222,7 @@
   }
 
   &:focus {
-    background-color: #ffffff;
+    background-color: $white;
     border: 4px solid #e5e5e5;
   }
 }
@@ -115,7 +233,7 @@
     width: 56px;
     height: 56px;
     margin: 0 23px 0 0;
-    background-color: #f2f2f2;
+    background-color: $white-one;
     background-repeat: no-repeat;
     border-radius: 50%;
     content: "";
@@ -194,7 +312,7 @@
     width: 56px;
     height: 56px;
     margin: 0 23px 0 0;
-    background-color: #f2f2f2;
+    background-color: $white-one;
     background-repeat: no-repeat;
     border-radius: 10%;
     content: "";
@@ -274,13 +392,13 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  background-color: #f2f2f2;
-  border: 4px solid #f2f2f2;
+  background-color: $white-one;
+  border: 4px solid $white-one;
   outline: none;
   resize: none;
 
   &::placeholder {
-    color: #000000;
+    color: $black;
   }
 
   &:hover {
@@ -289,7 +407,7 @@
   }
 
   &:focus {
-    background-color: #ffffff;
+    background-color: $white;
     border: 4px solid #e5e5e5;
   }
 }
@@ -302,8 +420,17 @@
   line-height: 26px;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 21px 73px;
+  }
 }
 
 .feedback__required-fields-info {
+  display: none;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }

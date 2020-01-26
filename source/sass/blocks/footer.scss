@@ -1,7 +1,14 @@
 .footer {
   padding: 41px 82px 23px;
-  color: #000000;
-  background-color: #ffffff;
+  color: $black;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 36px 60px;
+  }
 }
 
 .footer__hashtag {
@@ -11,14 +18,23 @@
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .footer__socials {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0 0 35px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .footer__social-item-link {
@@ -45,15 +61,15 @@
 .footer__copyright-icon-link {
   display: flex;
   margin-left: 11px;
-  color: #000000;
+  color: $black;
   transition: 0.3s;
 
   &:hover {
-    color: #81b3d2;
+    color: $light-blue;
   }
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
-    }
+  }
 }
 

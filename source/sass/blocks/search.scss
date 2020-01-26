@@ -1,5 +1,9 @@
 .search {
   padding: 33px 20px 50px;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 155px;
+  }
 }
 
 .search__title {
@@ -7,17 +11,22 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .search__text {
   margin: 0 0 42px;
-  color: #333333;
+  color: $black-one;
   font-size: 14px;
   line-height: 24px;
 }
 
 .search__link {
   display: flex;
+  justify-content: center;
   padding: 19px 46px;
   font-weight: bold;
   font-size: 21px;
