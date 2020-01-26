@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 75px 170px 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 113px 387px 65px;
+  }
 }
 
 .gallery__text-title {

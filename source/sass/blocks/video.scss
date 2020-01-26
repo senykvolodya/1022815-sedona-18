@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 68px 176px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 72px 393px 66px;
+  }
 }
 
 .video__title {
@@ -31,6 +35,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 60px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 200px 90px;
   }
 }
 
@@ -88,6 +96,10 @@
     position: absolute;
     right: 143px;
     width: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 555px;
   }
 }
 
