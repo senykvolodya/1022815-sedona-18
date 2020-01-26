@@ -1,7 +1,7 @@
 .main {
-  color: #000000;
+  color: $black;
   text-align: center;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .main__promo {
@@ -16,8 +16,29 @@
 
   &--welcome {
     min-height: 389px;
-    background-size: cover;
+    background-size: contain, cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 290px;
+    background: url("../../img/bg-intro-triangle-tablet.svg"), url("../../img/bg-back-tablet@1x.jpg");
+    background-color: #d6e6ed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain, cover;
+
+    &--welcome {
+      min-height: 518px;
+      background-size: contain, cover;
+    }
   }
 }
 
+.main__promo-img {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-width: 281px;
+    max-width: 460px;
+  }
+}
 

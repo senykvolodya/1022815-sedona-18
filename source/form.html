@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Form</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -11,7 +13,7 @@
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__item-link btn-blue" href="index.html">Главная</a></li>
           <li class="nav__item"><a class="nav__item-link btn-blue" href="photo.html">Фото и видео</a></li>
-          <li class="nav__item"><a class="nav__item-link btn-blue btn-current">Форма отзыва</a></li>
+          <li class="nav__item"><a class="nav__item-link nav__item-link--current btn-blue">Форма отзыва</a></li>
           <li class="nav__item"><a class="nav__item-link btn-blue" href="https://htmlacademy.ru/" target="_blank">Html
             academy</a></li>
         </ul>
@@ -22,7 +24,7 @@
 
     <main class="main">
       <div class="main__promo">
-        <img src="img/text-sedona.svg" width="229" height="39" alt="Промо Седоны">
+        <img class="main__promo-img" src="img/text-sedona.svg" width="229" height="39" alt="Промо Седоны">
       </div>
       <section class="feedback">
         <div class="feedback__text-wrapper">
@@ -31,24 +33,24 @@
             достопримечательностях</p>
         </div>
         <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="feedback__item">
+          <div class="feedback__item feedback__item--divider">
             <h3 class="feedback__item-title">Представьтесь:</h3>
             <div class="feedback__item-content-wrapper">
-              <label class="feedback__item-label" for="name">Имя<sup>*</sup></label>
+              <label class="feedback__item-label" for="name">Имя<sup>*</sup>:</label>
               <input class="feedback__item-input" type="text" id="name" name="name" placeholder="Петр" required>
             </div>
             <div class="feedback__item-content-wrapper">
-              <label class="feedback__item-label" for="last-name">Фамилия<sup>*</sup></label>
+              <label class="feedback__item-label" for="last-name">Фамилия<sup>*</sup>:</label>
               <input class="feedback__item-input" type="text" id="last-name" name="last-name" placeholder="Иванов"
                      required>
             </div>
             <div class="feedback__item-content-wrapper">
-              <label class="feedback__item-label" for="surname">Отчество</label>
+              <label class="feedback__item-label" for="surname">Отчество:</label>
               <input class="feedback__item-input" type="text" id="surname" name="surname" placeholder="Александрович">
             </div>
           </div>
           <div class="feedback__item">
-            <h3 class="feedback__item-title">Контактная информация:</h3>
+            <h3 class="feedback__item-title feedback__item-title--horizontal-dividers">Контактная информация:</h3>
             <div
               class="feedback__item-content-wrapper feedback__item-content-wrapper--contact-info-style feedback__item-content-wrapper--icon">
               <label class="feedback__item-label" for="tel">Контактный телефон<sup>*</sup>:</label>
@@ -99,27 +101,28 @@
             </div>
           </div>
           <div class="feedback__item">
-            <h3 class="feedback__item-title">Посещенные достопримечательности:</h3>
-            <div class="feedback__item-content-wrapper">
+            <h3 class="feedback__item-title feedback__item-title--dividers">Посещенные достопримечательности:</h3>
+            <div class="feedback__item-content-wrapper feedback__item-content-wrapper--label-width">
               <input class="feedback__item-checkbox visually-hidden" type="checkbox" id="bridge" name="bridge" checked>
               <label class="feedback__item-label feedback__item-label--radio-checkbox" for="bridge">Мост Дьявола</label>
             </div>
-            <div class="feedback__item-content-wrapper">
-              <input class="feedback__item-checkbox visually-hidden" type="checkbox" id="mountain" name="mountain" checked>
+            <div class="feedback__item-content-wrapper feedback__item-content-wrapper--label-width">
+              <input class="feedback__item-checkbox visually-hidden" type="checkbox" id="mountain" name="mountain"
+                     checked>
               <label class="feedback__item-label feedback__item-label--radio-checkbox"
                      for="mountain">Гора-Колокол</label>
             </div>
-            <div class="feedback__item-content-wrapper">
+            <div class="feedback__item-content-wrapper feedback__item-content-wrapper--label-width">
               <input class="feedback__item-checkbox visually-hidden" type="checkbox" id="park" name="park" checked>
               <label class="feedback__item-label feedback__item-label--radio-checkbox" for="park">Слайд-парк</label>
             </div>
-            <div class="feedback__item-content-wrapper">
+            <div class="feedback__item-content-wrapper feedback__item-content-wrapper--label-width">
               <input class="feedback__item-checkbox visually-hidden" type="checkbox" id="rocks" name="rocks">
               <label class="feedback__item-label feedback__item-label--radio-checkbox" for="rocks">Красные скалы</label>
             </div>
           </div>
           <div class="feedback__item feedback__item--last-block-padding">
-            <h3 class="feedback__item-title">Опишите свои эмоции:</h3>
+            <h3 class="feedback__item-title feedback__item-title--horizontal-dividers">Опишите свои эмоции:</h3>
             <div class="feedback__item-content-wrapper">
               <label class="visually-hidden" for="comment">Оставте отзыв</label>
               <textarea class="feedback__item-comment" id="comment" name="comment"
@@ -194,17 +197,19 @@
         <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их
           заполнить</p>
       </div>
-      <button class="modal__button btn-blue" type="button">Ок</button>
+      <div class="modal__button-wrapper">
+        <button class="modal__button btn-blue" type="button">Ок</button>
+      </div>
     </div>
 
-    <div class="modal">
-      <div class="modal__content-wrapper">
-        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+    <div class="modal modal--success">
+      <div class="modal__content-wrapper modal__content-wrapper--success">
+        <h2 class="modal__title modal__title--success">Ваш отзыв отправлен!</h2>
         <p class="modal__text"> Спасибо за ваше участие, ваш отзыв уже поступил к нам.
           В ближайшее время мы опубликуем его на сайте.</p>
       </div>
-      <div class="modal__button-wrapper">
-        <button class="modal__button modal__button--success btn-blue" type="button">Закрыть окно</button>
+      <div class="modal__button-wrapper modal__button-wrapper--success">
+        <button class="modal__button btn-blue" type="button">Закрыть окно</button>
       </div>
     </div>
 

@@ -1,6 +1,6 @@
 .btn-blue {
   color: #ffffff;
-  background: #82b4d4;
+  background: $light-blue;
   transition: 0.3s;
 
   &:hover {
@@ -18,10 +18,6 @@
   }
 }
 
-.btn-current {
-  color: #766357;
-}
-
 .btn-controls {
   display: inline-block;
   padding: 0;
@@ -31,7 +27,7 @@
   transition: 0.3s;
 
   &:hover {
-    color: #000000;
+    color: $black;
   }
 
   &:active {
