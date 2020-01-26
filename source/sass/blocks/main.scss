@@ -32,6 +32,20 @@
       background-size: contain, cover;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 290px;
+    background: url("../../img/bg-intro-triangle-desktop.svg"), url("../../img/bg-back-desktop@1x.jpg");
+    background-color: #d6e6ed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain, cover;
+
+    &--welcome {
+      min-height: 518px;
+      background-size: contain, cover;
+    }
+  }
 }
 
 .main__promo-img {

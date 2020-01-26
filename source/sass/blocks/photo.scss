@@ -6,6 +6,10 @@
     padding: 0 60px;
     border-top: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .photo__list {
@@ -27,6 +31,10 @@
     min-width: 324px;
     padding: 0;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
   }
 }
 
@@ -54,6 +62,14 @@
     padding: 21px 21px;
     background-color: #eaeaea;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .photo__title {
@@ -69,13 +85,17 @@
 
 .photo__text {
   margin: 0 0 11px;
-  color: #333333;
+  color: $black-one;
   font-size: 14px;
   line-height: 24px;
   text-transform: initial;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: rgba(255, 255, 255, 0.7);
   }
 }
 

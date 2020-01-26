@@ -11,6 +11,10 @@
     margin: -8px 0 -30px;
     padding: 0 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 90px;
+  }
 }
 
 .nav__item {
