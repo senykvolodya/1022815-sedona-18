@@ -6,6 +6,7 @@ var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var svgstore = require('gulp-svgstore');
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -21,6 +22,13 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task('svg', function () {
+  return gulp
+    .src('source/img/**/*.svg')
+    .pipe(svgstore({inlineSvg: true}))
+    .pipe(gulp.dest('build/img/'));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "source/",
@@ -34,4 +42,5 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("start", gulp.series("css", "svg", "server"));
+

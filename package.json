@@ -39,6 +39,7 @@
     "node": "8.16"
   },
   "dependencies": {
+    "gulp-svgstore": "^7.0.1",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-order": "^4.0.0"
   }
