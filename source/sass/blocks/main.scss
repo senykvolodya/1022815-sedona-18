@@ -25,11 +25,11 @@
     background-color: #d6e6ed;
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: contain, cover;
+    background-size: auto, cover;
 
     &--welcome {
       min-height: 518px;
-      background-size: contain, cover;
+      background-size: auto, cover;
     }
   }
 
@@ -39,11 +39,11 @@
     background-color: #d6e6ed;
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: contain, cover;
+    background-size: auto, cover;
 
     &--welcome {
       min-height: 518px;
-      background-size: contain, cover;
+      background-size: auto, cover;
     }
   }
 }

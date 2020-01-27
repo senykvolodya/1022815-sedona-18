@@ -110,20 +110,18 @@
 }
 
 .photo__like-count {
-  position: relative;
+  display: flex;
   margin: 0;
-  padding-left: 37px;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+}
 
-  &::before {
-    position: absolute;
-    left: 0;
-    width: 23px;
-    height: 21px;
-    background-image: url("../../img/icon-like.svg");
-    background-size: contain;
-    content: "";
+.photo__like-count-icon {
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.3);
+
+  @media (min-width: $desktop-width) {
+    color: $white;
   }
 }

@@ -1,12 +1,16 @@
 .btn {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+
   &--blue {
     color: #ffffff;
     background: $light-blue;
-    transition: 0.3s;
 
     &:hover {
       background-color: #669fc1;
-      cursor: pointer;
     }
 
     &:active {
@@ -20,12 +24,7 @@
   }
 
   &--controls {
-    display: inline-block;
-    padding: 0;
     background-color: transparent;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
 
     &:hover {
       color: $black;
