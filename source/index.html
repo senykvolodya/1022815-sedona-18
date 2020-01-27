@@ -12,10 +12,10 @@
     <header class="header">
       <nav class="header__nav nav">
         <ul class="nav__list">
-          <li class="nav__item "><a class="nav__item-link nav__item-link--current btn--blue ">Главная</a></li>
-          <li class="nav__item"><a class="nav__item-link btn--blue" href="photo.html">Фото и видео</a></li>
-          <li class="nav__item"><a class="nav__item-link btn--blue" href="form.html">Форма отзыва</a></li>
-          <li class="nav__item"><a class="nav__item-link btn--blue" href="https://htmlacademy.ru/" target="_blank">Html
+          <li class="nav__item "><a class="nav__item-link nav__item-link--current btn btn--blue ">Главная</a></li>
+          <li class="nav__item"><a class="nav__item-link btn btn--blue" href="photo.html">Фото и видео</a></li>
+          <li class="nav__item"><a class="nav__item-link btn btn--blue" href="form.html">Форма отзыва</a></li>
+          <li class="nav__item"><a class="nav__item-link btn btn--blue" href="https://htmlacademy.ru/" target="_blank">Html
             academy</a></li>
         </ul>
         <a class="header__logo">
@@ -105,15 +105,23 @@
         <p class="search__title">Заинтересовались?</p>
         <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
           седоне</p>
-        <a class="search__link btn--blue" href="#">Найти гостиницу</a>
+        <a class="search__link btn btn--blue" href="http://bit.do/sedonahotels" target="_blank">Найти гостиницу</a>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <picture>
-          <source srcset="img/bg-map-desktop@1x.jpg" media="(min-width: 770px)">
-          <source srcset="img/bg-map-tablet@1x.jpg" media="(min-width: 321px)">
-          <img class="map__pic" src="img/bg-map-mobile@1x.jpg" alt="Карта">
-        </picture>
+        <a class="map__link" href="http://bit.do/visitsedona" target="_blank">
+          <picture>
+            <source srcset="img/bg-map-desktop@1x.jpg" media="(min-width: 770px)">
+            <source srcset="img/bg-map-tablet@1x.jpg" media="(min-width: 321px)">
+            <img class="map__pic" src="img/bg-map-mobile@1x.jpg" alt="Карта">
+          </picture>
+          <svg class="map__marker" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+               x="0px" y="0px" width="27px" height="27px" viewBox="0 0 27 27" enable-background="new 0 0 27 27"
+               xml:space="preserve">
+            <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
+            <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
+          </svg>
+        </a>
         <div class="map__api"></div>
       </section>
     </main>
@@ -122,8 +130,8 @@
       <p class="footer__hashtag">#Visitsedona</p>
       <ul class="footer__socials">
         <li class="footer__social-item">
-          <a class="footer__social-item-link btn--blue" href="#" aria-label="Ссылка на Твитер">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          <a class="footer__social-item-link btn btn--blue" href="#" aria-label="Ссылка на Твитер">
+            <svg xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px"
                  viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
               <g id="W6EeEF_1_">
@@ -137,8 +145,8 @@
           </a>
         </li>
         <li class="footer__social-item">
-          <a class="footer__social-item-link btn--blue" href="#" aria-label="Ссылка на Фейсбук">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          <a class="footer__social-item-link btn btn--blue" href="#" aria-label="Ссылка на Фейсбук">
+            <svg xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px"
                  viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
               <path
@@ -148,8 +156,8 @@
           </a>
         </li>
         <li class="footer__social-item">
-          <a class="footer__social-item-link btn--blue" href="#" aria-label="Ссылка на Ютюб">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          <a class="footer__social-item-link btn btn--blue" href="#" aria-label="Ссылка на Ютюб">
+            <svg xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px"
                  viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
               <path
@@ -162,8 +170,8 @@
       <div class="footer__copyright">
         <p class="footer__copyright-text">Разработано</p>
         <a class="footer__copyright-icon-link" href="https://htmlacademy.ru/intensive/adaptive"
-           aria-label="Ссылка на HTMLAcademy">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+           aria-label="Ссылка на HTMLAcademy" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
                enable-background="new 0 0 26.943 34.09" xml:space="preserve">
             <path
@@ -173,6 +181,8 @@
         </a>
       </div>
     </footer>
-
+    <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss&callback=initMap"
+            async defer></script>
   </body>
 </html>

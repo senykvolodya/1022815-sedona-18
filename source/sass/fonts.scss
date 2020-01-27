@@ -9,3 +9,16 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "PT Sans";
+  src:
+    local("PT Sans Bold"),
+    local("ptsansbold"),
+    url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
