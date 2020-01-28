@@ -5,7 +5,7 @@ function initMap() {
     zoom: 7,
     disableDefaultUI: true
   });
-  var customMarker = '../img/icon-map-marker.svg';
+  var customMarker = '../img/sprite/icon-map-marker.svg';
   var marker = new google.maps.Marker({
     position: sedona,
     map: map,
