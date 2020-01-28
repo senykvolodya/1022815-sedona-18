@@ -24,4 +24,3 @@ menu.classList.remove('nav__list--hide');
 menuButton.addEventListener('click', function () {
   menu.classList.toggle('nav__list--hide');
 });
-
