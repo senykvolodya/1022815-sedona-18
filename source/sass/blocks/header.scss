@@ -27,8 +27,19 @@
   width: 23px;
   height: 21px;
   margin: 18px 20px;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.header__icon-menu-button {
+  &--open {
+    color: $white;
+  }
+
+  &-close {
+    color: $light-blue;
   }
 }

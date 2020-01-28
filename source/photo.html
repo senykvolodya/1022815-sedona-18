@@ -5,7 +5,15 @@
     <title>Photo</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/plugins/picturefill.min.js" async></script>
+    <script src="js/plugins/svgxuse.min.js" async></script>
   </head>
   <body>
 
@@ -26,7 +34,14 @@
           </picture>
         </a>
       </nav>
-      <button class="header__icon-menu" type="button"></button>
+      <button class="header__icon-menu btn" type="button">
+        <svg class="header__icon-menu-button header__icon-menu-button--open visually-hidden" fill="none" width="22.199" height="22.199">
+          <use xlink:href="img/sprite.svg#icon-cross"></use>
+        </svg>
+        <svg class="header__icon-menu-button header__icon-menu-button--close visually-hidden" fill="none" width="22.928" height="21.982">
+          <use xlink:href="img/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
     </header>
 
     <main class="main">
@@ -46,9 +61,12 @@
             <li class="photo__item">
               <a class="photo__link-pic" href="#">
                 <picture class="photo__pic">
-                  <source srcset="img/photo-sunset-desktop@1x.jpg" media="(min-width: 770px)">
-                  <source srcset="img/photo-sunset-tablet@1x.jpg" media="(min-width: 660px)">
-                  <img src="img/photo-sunset-mobile@1x.jpg" alt="Фотография заката в Седоне">
+                  <source type="image/webp" media="(min-width: 770px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+                  <source media="(min-width: 770px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                  <img class="photo__pic-prev" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Фотография заката в Седоне">
                 </picture>
               </a>
               <div class="photo__item-text-wrapper">
@@ -66,12 +84,15 @@
                 </div>
               </div>
             </li>
-            <li class="photo__item">
+            <li class="photo__item photo__item--small">
               <a class="photo__link-pic" href="#">
                 <picture class="photo__pic">
-                  <source srcset="img/photo-cactus-desktop@1x.jpg" media="(min-width: 940px)">
-                  <source srcset="img/photo-cactus-tablet@1x.jpg" media="(min-width: 768px)">
-                  <img src="img/photo-cactus-mobile@1x.jpg" alt="Фотография растительности в Седоне">
+                  <source type="image/webp" media="(min-width: 940px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
+                  <source media="(min-width: 940px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                  <img class="photo__pic-prev" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Фотография растительности в Седоне">
                 </picture>
               </a>
               <div class="photo__item-text-wrapper">
@@ -89,12 +110,15 @@
                 </div>
               </div>
             </li>
-            <li class="photo__item">
+            <li class="photo__item photo__item--small">
               <a class="photo__link-pic" href="#">
                 <picture class="photo__pic">
-                  <source srcset="img/photo-roads-desktop@1x.jpg" media="(min-width: 940px)">
-                  <source srcset="img/photo-roads-tablet@1x.jpg" media="(min-width: 768px)">
-                  <img src="img/photo-roads-mobile@1x.jpg" alt="Фотография дорог в Седоне">
+                  <source type="image/webp" media="(min-width: 940px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
+                  <source media="(min-width: 940px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                  <img class="photo__pic-prev" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Фотография дорог в Седоне">
                 </picture>
               </a>
               <div class="photo__item-text-wrapper">
@@ -112,12 +136,15 @@
                 </div>
               </div>
             </li>
-            <li class="photo__item">
+            <li class="photo__item photo__item--small">
               <a class="photo__link-pic" href="#">
                 <picture class="photo__pic">
-                  <source srcset="img/photo-bridge-desktop@1x.jpg" media="(min-width: 940px)">
-                  <source srcset="img/photo-bridge-tablet@1x.jpg" media="(min-width: 768px)">
-                  <img src="img/photo-bridge-mobile@1x.jpg" alt="Фотография скал в Седоне">
+                  <source type="image/webp" media="(min-width: 940px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+                  <source media="(min-width: 940px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img class="photo__pic-prev" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фотография скал в Седоне">
                 </picture>
               </a>
               <div class="photo__item-text-wrapper">
@@ -146,9 +173,12 @@
           </div>
           <div class="video__player-wrapper">
             <picture class="video__player-img">
-              <source srcset="img/video-desktop@1x.jpg" media="(min-width: 769px)">
-              <source srcset="img/video-tablet@1x.jpg" media="(min-width: 321px)">
-              <img src="img/video-mobile@1x.jpg" alt="Превью видео">
+              <source type="image/webp" media="(min-width: 769px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 321px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+              <source media="(min-width: 769px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 321px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video__img-prev" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Превью видео">
             </picture>
             <div class="video__control-panel">
               <button class="video__repeat btn btn--controls" type="button">

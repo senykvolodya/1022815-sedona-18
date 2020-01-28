@@ -5,10 +5,12 @@
 
 .map__pic {
   display: block;
+  width: 100%;
 }
 
 .map__link {
   position: relative;
+  display: flex;
 }
 
 .map__marker {

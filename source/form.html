@@ -5,7 +5,15 @@
     <title>Form</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/plugins/picturefill.min.js" async></script>
+    <script src="js/plugins/svgxuse.min.js" async></script>
   </head>
   <body>
     <header class="header">
@@ -25,7 +33,14 @@
           </picture>
         </a>
       </nav>
-      <button class="header__icon-menu" type="button"></button>
+      <button class="header__icon-menu btn" type="button">
+        <svg class="header__icon-menu-button header__icon-menu-button--open visually-hidden" fill="none" width="22.199" height="22.199">
+          <use xlink:href="img/sprite.svg#icon-cross"></use>
+        </svg>
+        <svg class="header__icon-menu-button header__icon-menu-button--close visually-hidden" fill="none" width="22.928" height="21.982">
+          <use xlink:href="img/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
     </header>
 
     <main class="main">
@@ -61,7 +76,7 @@
             <div
               class="feedback__item-content-wrapper feedback__item-content-wrapper--contact-info-style feedback__item-content-wrapper--icon">
               <label class="feedback__item-label" for="tel"><span
-                class="feedback__item-label-phone-word">Контактный</span> телефон<sup>*</sup>:</label>
+                class="feedback__item-label-phone-word">Контактный&nbsp;</span>телефон<sup>*</sup>:</label>
               <input class="feedback__item-input" type="tel" id="tel" name="tel" placeholder="Введите телефон" required>
               <svg class="feedback__item-input-icon" fill="none" width="16" height="16">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>

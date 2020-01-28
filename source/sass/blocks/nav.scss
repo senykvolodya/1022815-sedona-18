@@ -1,9 +1,15 @@
 .nav__list {
-  //position: absolute;
-  //z-index: -1;
   margin: 0;
   padding: 0;
   list-style: none;
+  transition-duration: 0.5s;
+
+  &--hide {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    transform: translateY(-100%);
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;

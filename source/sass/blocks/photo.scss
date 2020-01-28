@@ -40,10 +40,19 @@
     min-width: 324px;
     padding: 0;
     border-bottom: none;
+
+    &--small {
+      width: 50%;
+      min-width: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
+
+    &--small {
+      width: calc(100% / 3);
+    }
   }
 }
 
@@ -62,6 +71,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+}
+
+.photo__pic-prev {
+  width: 100%;
 }
 
 .photo__item-text-wrapper {
