@@ -5,7 +5,7 @@ function initMap() {
     zoom: 7,
     disableDefaultUI: true
   });
-  var customMarker = '../img/icon-map-marker.svg';
+  var customMarker = '../img/sprite/icon-map-marker.svg';
   var marker = new google.maps.Marker({
     position: sedona,
     map: map,
@@ -13,3 +13,14 @@ function initMap() {
     icon: customMarker
   });
 }
+
+var menu = document.querySelector('.nav__list');
+var menuButton = document.querySelector('.header__icon-menu');
+
+
+menu.classList.add('nav__list--hide');
+menu.classList.remove('nav__list--hide');
+
+menuButton.addEventListener('click', function () {
+  menu.classList.toggle('nav__list--hide');
+});
