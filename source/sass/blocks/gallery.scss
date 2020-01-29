@@ -1,5 +1,5 @@
 .gallery__text {
-  padding: 45px 25px 23px;
+  padding: 39px 25px 23px;
 
   @media (min-width: $tablet-width) {
     padding: 75px 170px 65px;
@@ -11,18 +11,19 @@
 }
 
 .gallery__text-title {
-  margin: 0 0 40px;
+  margin: 0 0 27px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 31px;
     font-size: 30px;
   }
 }
 
 .gallery__text-content {
-  margin: 0 0 10px;
+  margin: 0 0 4px;
   color: #333333;
   font-size: 14px;
   line-height: 24px;

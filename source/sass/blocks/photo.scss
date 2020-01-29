@@ -33,7 +33,7 @@
 }
 
 .photo__item {
-  padding: 22px 20px 20px;
+  padding: 22px 20px 17px;
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
@@ -58,7 +58,7 @@
 
 .photo__link-pic {
   display: block;
-  margin: 0 0 22px;
+  margin: 0 0 9px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -82,7 +82,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 21px 21px;
+    padding: 16px 27px 16px 21px;
     background-color: #eaeaea;
   }
 
@@ -96,7 +96,7 @@
 }
 
 .photo__title {
-  margin: 0 0 11px;
+  margin: 0;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
@@ -107,7 +107,7 @@
 }
 
 .photo__text {
-  margin: 0 0 11px;
+  margin: 0 0 8px;
   color: $black-one;
   font-size: 14px;
   line-height: 24px;
@@ -131,7 +131,7 @@
 }
 
 .photo__like-count-icon {
-  margin-right: 10px;
+  margin-right: 14px;
   color: rgba(0, 0, 0, 0.3);
 
   @media (min-width: $desktop-width) {

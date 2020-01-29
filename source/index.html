@@ -19,6 +19,7 @@
 
     <header class="header">
       <nav class="header__nav nav">
+
         <ul class="nav__list">
           <li class="nav__item "><a class="nav__item-link nav__item-link--current btn btn--blue ">Главная</a></li>
           <li class="nav__item"><a class="nav__item-link btn btn--blue" href="photo.html">Фото и видео</a></li>
@@ -34,11 +35,14 @@
           </picture>
         </a>
       </nav>
+      <!--при клике на кнопку с классом .header__icon-menu в навигации с классом .nav__list добавляется класс .nav__list - hide который прячет меню.
+       при повторном клике на кнопку с классом .header__icon-menu в навигации с классом .nav__list удаляется класс .nav__list - hide и показывается меню.
+      -->
       <button class="header__icon-menu btn" type="button">
-        <svg class="header__icon-menu-button header__icon-menu-button--open visually-hidden" fill="none" width="22.199" height="22.199">
+        <svg class="header__icon-menu-button header__icon-menu-button--open visually-hidden" fill="none" width="22" height="22">
           <use xlink:href="img/sprite.svg#icon-cross"></use>
         </svg>
-        <svg class="header__icon-menu-button header__icon-menu-button--close visually-hidden" fill="none" width="22.928" height="21.982">
+        <svg class="header__icon-menu-button header__icon-menu-button--close visually-hidden" fill="none" width="23" height="22">
           <use xlink:href="img/sprite.svg#icon-menu"></use>
         </svg>
       </button>
@@ -73,22 +77,22 @@
         <ul class="advantages__list-icon">
           <li class="advantages__icon-item">
             <h3 class="advantages__icon-item-title">Жилье</h3>
-            <p class="advantages__icon-item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <p class="advantages__icon-item-text">Рекомендуем пожить в настоящем мотеле, все&nbsp;как&nbsp;в кино!</p>
           </li>
           <li class="advantages__icon-item  advantages__icon-item--gifts">
             <h3 class="advantages__icon-item-title">Сувениры</h3>
-            <p class="advantages__icon-item-text">Не только китайского, но и местного производства!</p>
+            <p class="advantages__icon-item-text">Не&nbsp;только&nbsp;китайского, но&nbsp;и местного производства!</p>
           </li>
           <li class="advantages__icon-item advantages__icon-item--burger">
             <h3 class="advantages__icon-item-title">Еда</h3>
-            <p class="advantages__icon-item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <p class="advantages__icon-item-text">Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
           </li>
         </ul>
         <div class="advantages__item-wrapper">
           <div class="advantages__item advantages__item--backward">
-            <h3 class="advantages__item-title">Там есть мост дьявола</h3>
+            <h3 class="advantages__item-title">Там&nbsp;есть мост&nbsp;дьявола</h3>
             <p class="advantages__item-count">— №2 —</p>
-            <p class="advantages__item-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <p class="advantages__item-text">Да, по нему можно пройти! Если&nbsp;вы осмелитесь, конечно</p>
           </div>
           <picture class="advantages__item-image">
             <source type="image/webp" media="(min-width: 1020px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
@@ -103,13 +107,13 @@
           <li class="advantages__item advantages__item--bg-grey">
             <h3 class="advantages__item-title">Небольшая площадь</h3>
             <p class="advantages__item-count">— №3 —</p>
-            <p class="advantages__item-text">Все интересные места находятся очень близко
+            <p class="advantages__item-text">Все&nbsp;интересные&nbsp;места находятся очень близко
             <p>
           </li>
           <li class="advantages__item advantages__item--bg-grey">
             <h3 class="advantages__item-title">Красивая дорога</h3>
             <p class="advantages__item-count">— №4 —</p>
-            <p class="advantages__item-text">Ехать в седону из лас-вегаса совсем не скучно!
+            <p class="advantages__item-text">Ехать в седону из лас-вегаса совсем не&nbsp;скучно!
             <p>
           </li>
           <li class="advantages__item advantages__item--bg-grey">
@@ -123,7 +127,7 @@
       <section class="search">
         <h2 class="visually-hidden">Поиск жилья</h2>
         <p class="search__title">Заинтересовались?</p>
-        <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+        <p class="search__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в
           седоне</p>
         <a class="search__link btn btn--blue" href="http://bit.do/sedonahotels" target="_blank">Найти гостиницу</a>
       </section>
@@ -151,21 +155,21 @@
       <ul class="footer__socials">
         <li class="footer__social-item">
           <a class="footer__social-item-link btn btn--blue" href="#" aria-label="Ссылка на Твитер">
-            <svg fill="none" width="17.5" height="14.663">
+            <svg fill="none" width="17" height="14">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="footer__social-item">
           <a class="footer__social-item-link btn btn--blue" href="#" aria-label="Ссылка на Фейсбук">
-            <svg fill="none" width="8.672" height="18.944">
+            <svg fill="none" width="9" height="19">
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="footer__social-item">
           <a class="footer__social-item-link btn btn--blue" href="#" aria-label="Ссылка на Ютюб">
-            <svg fill="none" width="19.979" height="14.015">
+            <svg fill="none" width="20" height="14">
               <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
@@ -174,7 +178,7 @@
       <div class="footer__copyright">
         <p class="footer__copyright-text">Разработано</p>
         <a class="footer__copyright-icon-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на HTMLAcademy" target="_blank">
-          <svg fill="none" width="26.943" height="34.09">
+          <svg fill="none" width="27" height="34">
             <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>

@@ -1,8 +1,8 @@
 .search {
-  padding: 33px 20px 50px;
+  padding: 25px 20px 50px;
 
   @media (min-width: $tablet-width) {
-    padding: 57px 155px;
+    padding: 55px 155px;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,27 +11,32 @@
 }
 
 .search__title {
-  margin: 0 0 30px;
+  margin: 0 0 21px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 31px;
     font-size: 30px;
   }
 }
 
 .search__text {
-  margin: 0 0 42px;
+  margin: 0 0 34px;
   color: $black-one;
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 42px;
+  }
 }
 
 .search__link {
   display: flex;
   justify-content: center;
-  padding: 19px 46px;
+  padding: 16px 46px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
