@@ -34,10 +34,10 @@
         </a>
       </nav>
       <button class="header__icon-menu btn" type="button">
-        <svg class="header__icon-menu-button header__icon-menu-button--open visually-hidden" fill="none" width="22.199" height="22.199">
+        <svg class="header__icon-menu-button header__icon-menu-button--open visually-hidden" fill="none" width="22" height="22">
           <use xlink:href="img/sprite.svg#icon-cross"></use>
         </svg>
-        <svg class="header__icon-menu-button header__icon-menu-button--close visually-hidden" fill="none" width="22.928" height="21.982">
+        <svg class="header__icon-menu-button header__icon-menu-button--close visually-hidden" fill="none" width="23" height="22">
           <use xlink:href="img/sprite.svg#icon-menu"></use>
         </svg>
       </button>
@@ -69,9 +69,9 @@
               <input class="feedback__item-input" type="text" id="surname" name="surname" placeholder="Александрович">
             </div>
           </div>
-          <div class="feedback__item">
+          <div class="feedback__item feedback__item--contact-info">
             <h3
-              class="feedback__item-title feedback__item-title--horizontal-dividers feedback__item-title--dividers-info">
+              class="feedback__item-title feedback__item-title--contact-info feedback__item-title--horizontal-dividers feedback__item-title--dividers-info">
               Контактная информация:</h3>
             <div
               class="feedback__item-content-wrapper feedback__item-content-wrapper--contact-info-style feedback__item-content-wrapper--icon">
@@ -94,17 +94,17 @@
           <div class="feedback__item">
             <h3 class="feedback__item-title">Ваше общее впечатление:</h3>
             <div class="feedback__item-content-wrapper">
-              <input class="feedback__item-radio visually-hidden" type="radio" id="good" name="impressions" checked>
+              <input class="feedback__item-radio visually-hidden" type="radio" id="good" value="good" name="impressions" checked>
               <label class="feedback__item-label feedback__item-label--radio-checkbox" for="good">Скорее
                 положительное</label>
             </div>
             <div class="feedback__item-content-wrapper">
-              <input class="feedback__item-radio visually-hidden" type="radio" id="bad" name="impressions">
+              <input class="feedback__item-radio visually-hidden" type="radio" id="bad" value="bad" name="impressions">
               <label class="feedback__item-label feedback__item-label--radio-checkbox" for="bad">Скорее
                 отрицательное</label>
             </div>
             <div class="feedback__item-content-wrapper">
-              <input class="feedback__item-radio visually-hidden" type="radio" id="don't-know" name="impressions">
+              <input class="feedback__item-radio visually-hidden" type="radio" id="don't-know" value="don't-know" name="impressions">
               <label class="feedback__item-label feedback__item-label--radio-checkbox" for="don't-know">Затрудняюсь
                 ответить</label>
             </div>
@@ -148,21 +148,21 @@
       <ul class="footer__socials">
         <li class="footer__social-item">
           <a class="footer__social-item-link btn btn--blue" href="#" aria-label="Ссылка на Твитер">
-            <svg fill="none" width="17.5" height="14.663">
+            <svg fill="none" width="17" height="14">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="footer__social-item">
           <a class="footer__social-item-link btn btn--blue" href="#" aria-label="Ссылка на Фейсбук">
-            <svg fill="none" width="8.672" height="18.944">
+            <svg fill="none" width="9" height="19">
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="footer__social-item">
           <a class="footer__social-item-link btn btn--blue" href="#" aria-label="Ссылка на Ютюб">
-            <svg fill="none" width="19.979" height="14.015">
+            <svg fill="none" width="20" height="14">
               <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
@@ -171,7 +171,7 @@
       <div class="footer__copyright">
         <p class="footer__copyright-text">Разработано</p>
         <a class="footer__copyright-icon-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на HTMLAcademy">
-          <svg fill="none" width="26.943" height="34.09">
+          <svg fill="none" width="27" height="34">
             <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>
