@@ -35,14 +35,16 @@
           </picture>
         </a>
       </nav>
-      <!--при клике на кнопку с классом .header__icon-menu в навигации с классом .nav__list добавляется класс .nav__list - hide который прячет меню.
-       при повторном клике на кнопку с классом .header__icon-menu в навигации с классом .nav__list удаляется класс .nav__list - hide и показывается меню.
-      -->
+
+      <!--      чтобы появилась иконка в кнопке для svg с классом .header icon-menu-button удаляем класс .visually-hidden-->
+      <!--      чтобы открыть меню для класса .nav__list удаляем .nav__list--hide а для кнопки добавляем модификатор .header__icon-menu--open-->
+      <!--      чтобы скрыть меню для класса .nav__list добавляем .nav__list--hide а для кнопки удалить модификатор .header__icon-menu--open-->
+
       <button class="header__icon-menu btn" type="button">
-        <svg class="header__icon-menu-button header__icon-menu-button--open visually-hidden" fill="none" width="22" height="22">
+        <svg class="header__icon-menu-button header__icon-menu-button--close " fill="none" width="22" height="22">
           <use xlink:href="img/sprite.svg#icon-cross"></use>
         </svg>
-        <svg class="header__icon-menu-button header__icon-menu-button--close visually-hidden" fill="none" width="23" height="22">
+        <svg class="header__icon-menu-button header__icon-menu-button--open " fill="none" width="23" height="22">
           <use xlink:href="img/sprite.svg#icon-menu"></use>
         </svg>
       </button>

@@ -29,17 +29,33 @@
   margin: 18px 20px;
   background-color: transparent;
 
+  .header__icon-menu-button--open {
+    display: inline-block;
+  }
+
+  &--open {
+    .header__icon-menu-button--close {
+      display: inline-block;
+    }
+
+    .header__icon-menu-button--open {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .header__icon-menu-button {
+  display: none;
+
   &--open {
-    color: $white;
+    color: $light-blue;
   }
 
   &-close {
-    color: $light-blue;
+    color: $white;
   }
 }
